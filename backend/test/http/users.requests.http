@@ -1,0 +1,45 @@
+### Health check
+GET http://localhost:3000/api
+
+### Create
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "name": "demo8",
+    "email": "demo8@demo.com",
+    "password": "demodemo8"
+}
+
+### Find all
+GET http://localhost:3000/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiZGVtb0BkZW1vLmNvbSIsImlhdCI6MTc3OTIwMDYwNSwiZXhwIjoxNzc5MjAxMjA1fQ.zpdGk-feWLOFcJ5pVSYBBkkEGdcmFAvyBbRketE4evQ
+
+### Find all by role
+GET http://localhost:3000/api/users?role=ADMIN
+
+### Find one by id
+GET http://localhost:3000/api/users/5
+
+### Update user
+PATCH http://localhost:3000/api/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImlhdCI6MTc3OTI2MTAzMiwiZXhwIjoxNzc5MjYxNjMyfQ.SgIPTCG0LK0mSO5f-gHgzmHWNjgeFUDhPgJQ6nTOp_U
+Content-Type: application/json
+
+{
+    "name": "demo",
+    "email": "demo@demo.com"
+}
+
+### Update password
+PATCH http://localhost:3000/api/users/me/password
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImlhdCI6MTc3OTI4MDMzOCwiZXhwIjoxNzc5MjgwOTM4fQ.WmwCzgtBTOqjBhgC14sVhvTIl2FRxkKCs_b-_B0Q31w
+Content-Type: application/json
+
+{
+    "currentPassword": "demodemo",
+    "newPassword": "demodemo2"
+}
+
+### Delete user
+DELETE http://localhost:3000/api/users/2

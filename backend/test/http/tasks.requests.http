@@ -1,0 +1,3 @@
+### Find all
+GET http://localhost:3000/api/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjMsImlhdCI6MTc4OTY0Nzg3MCwiZXhwIjoxNzkwMjUyNjcwfQ.OoTssNcZ5SlAC3I_-ZtH992aOtG-V2rY8z3ZSv0CT3c

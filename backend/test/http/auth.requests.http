@@ -1,0 +1,17 @@
+@token=YOUR_TOKEN_HERE
+
+### Health check
+GET http://localhost:3000/api
+
+### Login
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "demo@demo.com",
+    "password": "demodemo2"
+}
+
+### Get profile
+GET http://localhost:3000/api/auth/profile
+Authorization: Bearer {{token}}
