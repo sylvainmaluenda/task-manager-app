@@ -3,8 +3,8 @@
 TaskManager est application de gestion de tâches par catégorie réalisée dans le cadre de mes travaux personnels sur la stack **NestJS / React**.
 Elle propose une interface d'administration sécurisée pour les utilisateurs souhaitant persister leur données et un mode "invité" pour tester l'application.
 
-L'interface d'administration frontend est hébergée chez **Vercel** : https://taskmanager.vercel.app
-L'API de traitement backend est hébergé chez **Render** : https://taskmanager.onrender.com
+L'interface d'administration frontend est hébergée chez **Vercel** : https://task-manager-app-rho-lake.vercel.app/
+L'API de traitement backend est hébergé chez **Render** : https://task-manager-app-s0f6.onrender.com/api/
 La base de données est hébergée chez **Neon** : https://neon.com
 
 Cette application utilise une API hébergée sur le plan gratuit de Render. Après 15 minutes sans activité, l'API est automatiquement mise en veille. Lors de la première utilisation suivant cette période, son redémarrage peut prendre environ une minute. L'application peut donc sembler ne pas répondre immédiatement lors de la première requête.
